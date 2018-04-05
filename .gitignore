@@ -45,3 +45,11 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Additional ignores added by me
+
+node_modules
+reactREADME.md
+package.json
+package-lock.json
+config.js
