@@ -1,0 +1,54 @@
+TO DO LIST
+-------------------------
+
+[x] - import api keys into the application file. (reference the same thing that i did
+with the twitter app in project 7 or 8)
+
+[x] - read flickr docs and setup the proper code for fetching the flickr data (once again
+reference the earlier twitter project)
+
+[x!!?] - Fetch the data from Flickr API. Make sure data fetching and state is managed by
+a higher-level “container” component
+
+[x] - reference error route the same as the gif search example project
+[x] - npm install axios(installed jan 6) and incorporate(need to mimick gif example)
+[x] - components folder was built mimicking the gif search setup and still needs to be
+adapted within install of the files for flickr
+
+------------------------index.js in MainContent
+[x] - the plan is to combine both the gif and rsvp examples into this project
+[x] - so far so good .....
+------------------------index.js components
+[x] - the plan is to render either the pics or nopics in the index.js and send that through
+[x] - to the MainContent index.js
+
+------------------------Header
+[x] - see if i can break out a header from the base html and place here to be rendered in the app.js code
+[x] - build a header index and will likely be emulating the example in the rsvp project
+[x] - incorporating the search into the header as per rsvp project
+
+------------------------PicList index.js
+[x] - incorporate if else to handle the render of the pics or nopics output
+
+------------------------PicList nopics
+[x] - no pics is complete at this time
+------------------------PicList Pics.js
+[x] - currently rendering a static list
+[x] - will have to generate a list from the search results
+
+feb 15 update -----
+
+[x] - have everything rendering to the page....
+[x] - need to incorporate the search functions And the api keys ...
+[x] - as well as including the api fetching functions from Flickr
+[x] - Currently fetching raw data, now have to fetch the URL information
+[x] - i have the pics array being generated, now i just have to set it up
+to feed into the pics output .. use url generator method
+[x] - search bar to feed into query variable for dynamic Search
+[x] - need to incorporate the three search buttons as well
+      [x] - incorporate routes/router for the buttons
+[] - create a 404 route
+      [] - finish 404 page
+[] - dont display the results header when nothing is found
+[] - tweak navigation so that i dont have any duplicate router calls
+[] - links need to incorporate a new search
