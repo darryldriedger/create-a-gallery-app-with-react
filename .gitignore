@@ -50,9 +50,8 @@ Temporary Items
 
 node_modules
 reactREADME.md
-package.json
-package-lock.json
+# package.json
+# package-lock.json
 config.js
 configRef.js
-difference
 notes.txt
