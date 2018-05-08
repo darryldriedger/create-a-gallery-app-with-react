@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import axios      from 'axios';
 import config     from './config';
 import SearchForm from './SearchForm';
-import NoPics     from './pages/NoPics';
+import Gallery     from './pages/Gallery';
 
 class Container extends Component {
   constructor (){
@@ -78,18 +78,7 @@ class Container extends Component {
 
     render(){
 
-      let loader ;
-      let resultsHeader;
       let list = this.PicList(this.state.data);
-
-      if (this.state.loading) {
-        resultsHeader = <h2>Loading....</h2>;
-      } else if (list.props.children.length > 0){
-        resultsHeader = <h2>Results</h2>;
-        loader = list;
-      } else if(list.props.children.length === 0){
-        resultsHeader = <NoPics />;
-      }
 
      return (
          <div>
@@ -98,12 +87,11 @@ class Container extends Component {
              onSearchChange={this.onSearchChange}
              query={this.query}
              />
-           <div className="photo-container">
-             {resultsHeader}
-             <ul>
-               {loader}
-             </ul>
-           </div>
+           <Gallery
+             list={list}
+             loading={this.state.loading}
+             // subject={this.props.subject}
+             />
          </div>
        )
      }
